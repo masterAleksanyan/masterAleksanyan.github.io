@@ -1,0 +1,273 @@
+@media screen and (max-width: 1230px) {
+  html {
+    font-size: 5px; }
+  .wrapper {
+    width: 100%;
+    padding: 0 10px; }
+  .reviews .reviews_items.wrapper {
+    padding: 15px 10px; }
+  .reviews_items .reviews_item .reviews_about {
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .reviews_items .reviews_item .reviews_about .assessment {
+      width: 100%;
+      text-align: right;
+      padding-top: 5px; }
+  .header_menu {
+    position: relative; }
+    .header_menu .header_menu_list {
+      z-index: 999;
+      position: absolute;
+      background-color: #4a3934;
+      top: 100%;
+      right: 120%;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      transition: all 0.5s ease-in-out; }
+      .header_menu .header_menu_list li {
+        width: 100%;
+        display: block;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 0;
+        padding-right: 10px; }
+        .header_menu .header_menu_list li:hover {
+          background-color: #fff;
+          color: #4a3934; }
+        .header_menu .header_menu_list li a {
+          display: block; }
+  .header_menu_list.flex {
+    right: 0;
+    transition: all 0.5s ease-in-out; }
+  .header .header_menu .btn_menu_list {
+    display: block;
+    cursor: pointer; }
+  .category_item .category_item_reviews .restaurant_review_content .reviews_item .reviews_about {
+    flex-wrap: nowrap; } }
+
+@media screen and (max-width: 1180px) {
+  .leaderboard_restaurants {
+    justify-content: space-around; } }
+
+@media screen and (max-width: 1080px) {
+  .leaderboard_menu li {
+    width: 33%;
+    text-align: center; }
+  .category1 .restaurant_review_more a {
+    left: 75%; }
+  .category1 .restaurant_review_content .reviews_item .more_view a {
+    margin-top: 10px; } }
+
+@media screen and (max-width: 900px) {
+  .header_category_list li a i {
+    font-size: 50px; }
+  .header_main_content .header_main_title {
+    width: 480px;
+    margin: 0 auto 40px; }
+  .category1 .restaurant_review_content .reviews_item {
+    width: 100%; }
+    .category1 .restaurant_review_content .reviews_item .reviews_about {
+      justify-content: space-between; }
+  .category1 .restaurant_review_more a {
+    width: 140px;
+    top: 90%;
+    left: calc(50% - 70px); } }
+
+@media screen and (max-width: 840px) {
+  .reviews_items {
+    flex-wrap: wrap; }
+    .reviews_items .reviews_item {
+      width: 48%;
+      margin-right: 0; }
+      .reviews_items .reviews_item:last-child {
+        margin-top: 15px; }
+  .footer_content {
+    flex-wrap: wrap; }
+    .footer_content div {
+      width: 45%;
+      margin-bottom: 40px; }
+    .footer_content .footer_revizion {
+      width: 45%; }
+  .footer_copyright {
+    margin-top: 0; }
+  .category_item .category_item_reviews .restaurant_review_content .reviews_item .reviews_about {
+    flex-wrap: wrap; }
+  .category_item .category_item_reviews .restaurant_review_top {
+    flex-wrap: wrap;
+    align-items: flex-start; }
+    .category_item .category_item_reviews .restaurant_review_top span {
+      display: block;
+      width: 100%;
+      text-align: right; }
+      .category_item .category_item_reviews .restaurant_review_top span + span {
+        margin-top: 5px; }
+  .category_item .category_item_reviews .restaurant_review_category span {
+    display: block;
+    margin-top: 5px; }
+    .category_item .category_item_reviews .restaurant_review_category span:first-child {
+      margin-top: 0;
+      margin-left: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .header_top_menu {
+    display: none; }
+  .header_top_translate {
+    line-height: 25px; }
+  .header_category {
+    display: none; }
+  .header_filtr_list span + span {
+    display: none; }
+  .header_search {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    .header_search_city {
+      margin-bottom: 10px;
+      margin-right: 0; }
+    .header_search_input {
+      width: 70%; }
+  .header_filtr_list {
+    display: none; }
+  .header_title h1 {
+    display: block; }
+  .header_main_content .header_main_about {
+    flex-wrap: wrap;
+    padding: 0 10px; }
+    .header_main_content .header_main_about div + div {
+      margin-left: 0; }
+    .header_main_content .header_main_about div {
+      width: 45%; }
+    .header_main_content .header_main_about .about3, .header_main_content .header_main_about .about4 {
+      margin-top: 25px; }
+  .header_main_content .header_main_btn .header_btn {
+    font-size: 16px; }
+  .about_service .about_service_content div {
+    width: 100%; }
+  .leaderboard_menu {
+    display: none;
+    margin-bottom: 20px; }
+    .leaderboard_menu li {
+      width: 100%;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      border-bottom: 1px solid transparent;
+      transition: all 0.2s ease-in-out; }
+      .leaderboard_menu li:hover {
+        border-bottom: 1px solid #4a3934;
+        transition: all 0.2s ease-in-out; }
+      .leaderboard_menu li a::before {
+        display: none; }
+  .leaderboard_showbtn {
+    display: block; }
+  .category1 .leaderboard_restaurants_item {
+    padding: 10px 0 0 0;
+    width: 300px; }
+  .category1 .wrapper {
+    flex-direction: column; }
+    .category1 .wrapper .restaurant_review {
+      width: 100%; } }
+
+@media screen and (max-width: 700px) {
+  .category_item .wrapper {
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .header_search_input button {
+    width: 45px;
+    font-size: 24px; }
+  .header_search_input input[type="text"] {
+    padding: 0 60px 0 15px; }
+  .header_main_content .header_main_btn .header_btn {
+    font-size: 14px; }
+  .reviews_items .reviews_item {
+    width: 100%;
+    margin-bottom: 15px; }
+    .reviews_items .reviews_item:last-child {
+      margin: 0; }
+  .header_filtr_btn .btn_filtr {
+    display: block;
+    margin-bottom: 5px; }
+  .view_all_btn {
+    width: 200px;
+    font-size: 16px; }
+  .leaderboard_restaurants_item .timetable_work .timetable_block {
+    top: 30px;
+    width: 130px;
+    padding-left: 10px;
+    left: calc(100% - 130px); }
+    .leaderboard_restaurants_item .timetable_work .timetable_block::before {
+      top: -1px;
+      left: 50%;
+      margin-left: -4px;
+      transform: rotate(45deg); } }
+
+@media screen and (max-width: 500px) {
+  .header_main_content .header_main_about div {
+    width: 100%;
+    margin-top: 30px; }
+    .header_main_content .header_main_about div p {
+      padding: 0 15%; }
+  .header_main_content .header_main_title {
+    width: 80%;
+    margin: 0 auto 20px; }
+  .header_main_content .header_main_title p {
+    width: 70%;
+    margin: 15px auto 0; }
+  .header_main_content .header_main_btn .header_btn {
+    font-weight: 400;
+    font-size: 12px; } }
+
+@media screen and (max-width: 425px) {
+  .reviews_title h2 {
+    font-size: 24px; }
+  .header_title {
+    font-size: 18px; }
+  .header_filtr_btn .btn_filtr {
+    width: 150px; }
+  .header_logo_city {
+    width: 300px; }
+  .header_search_city {
+    height: 30px;
+    line-height: 30px; }
+    .header_search_city i {
+      font-size: 16px;
+      color: #000; }
+  .header_search_input {
+    height: 30px; }
+    .header_search_input button {
+      width: 30px;
+      height: 100%;
+      line-height: 30px;
+      font-size: 14px; }
+  .footer_content div {
+    width: 100%; }
+  .footer_content .footer_revizion {
+    width: 100%; }
+  .leaderboard .view_all_btn {
+    width: 250px; }
+  .leaderboard_restaurants_item .img_block {
+    height: auto;
+    flex-wrap: wrap; }
+    .leaderboard_restaurants_item .img_block img {
+      margin: auto;
+      margin-bottom: 10px; }
+    .leaderboard_restaurants_item .img_block .restauran_about {
+      width: 100%; }
+  .leaderboard_restaurants_item .timetable_more {
+    justify-content: flex-end; }
+    .leaderboard_restaurants_item .timetable_more .comm {
+      display: none; }
+  .category1 .leaderboard_restaurants_item .img_block {
+    height: auto; }
+    .category1 .leaderboard_restaurants_item .img_block img {
+      height: 133px;
+      margin: 0 0 10px 0; }
+    .category1 .leaderboard_restaurants_item .img_block .restauran_about {
+      margin-left: 0; }
+  .category_item .left_sidebar {
+    padding: 0;
+    width: 300px; }
+  .category_item .wrapper {
+    padding: 0 10px; } }
