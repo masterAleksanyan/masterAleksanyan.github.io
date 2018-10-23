@@ -543,6 +543,7 @@ img{
 .footer-content{
   padding: 0 5vw;
 }
+.footer-logo a{display: inline-block;}
 .footer-logo{
   width: 273px;
   height: 29px;
