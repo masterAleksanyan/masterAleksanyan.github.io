@@ -349,6 +349,7 @@ img{
   display: inline-block;
   padding: 1.7rem 2.2rem;
   text-align: center;
+  margin-left: 10px;
 }
 .slide-title{
   font-size: 3.2rem;
@@ -1173,6 +1174,7 @@ form input, form textarea{
   .why-us-body .title-sm-one{
     margin-top: 20px;
   }
+	.filter-slide_btn{margin-left: 0}
 }
 
 @media only screen and (max-width : 480px) {
