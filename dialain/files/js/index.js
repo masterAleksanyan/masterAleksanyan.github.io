@@ -1,17 +1,5 @@
 $(document).ready(function() {
   
-  ymaps.ready(function(){
-    ymaps.geolocation.get({
-      provider: "yandex"
-    }).then(function (result) {
-      var g = result.geoObjects.get(0);
-      if (g.getCountry() != 'Россия'){
-        $('.country_span').html('Страны СНГ');
-      } else {
-        $('.country_span').html(g.getLocalities()[0]);
-      }
-    });
-  });
 
   $('.confident-link').click(function() {
       $('.hidden-conf').show();
@@ -91,7 +79,18 @@ $(document).ready(function() {
 
   start_timer();
   
-  
+  ymaps.ready(function(){
+    ymaps.geolocation.get({
+      provider: "yandex"
+    }).then(function (result) {
+      var g = result.geoObjects.get(0);
+      if (g.getCountry() != 'Россия'){
+        $('.country_span').html('Страны СНГ');
+      } else {
+        $('.country_span').html(g.getLocalities()[0]);
+      }
+    });
+  });
   
   $('input[name="phone"]').mask('+7 (999) 999-99-99');
   
