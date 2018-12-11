@@ -1,1 +1,108 @@
-$(document).ready(function(){ymaps.ready(function(){ymaps.geolocation.get({provider:"yandex"}).then(function(e){var o=e.geoObjects.get(0);"Россия"!=o.getCountry()?$(".country_span").html("Страны СНГ"):$(".country_span").html(o.getLocalities()[0])})})var e,o,t,n;$(".confident-link").click(function(){return $(".hidden-conf").show(),$(window).height()<760&&$(".conf-info").css({height:$(window).height()-120,"overflow-y":"scroll"}),!1}),$(".close-conf").click(function(){return $(".hidden-conf").hide(),!1}),$("select").length||$(".c-s").css({display:"none"}),n=(e=new Date).getDate()+2,o=e.getMonth()+1,t=e.getFullYear();for(var a=document.querySelectorAll(".price-old-x--top"),c=0;c<a.length;c++)a[c].innerHTML=n+"."+o+"."+t;$(".header__call").on("click",function(){$(".modal_mouse_out").addClass("active")}),$(".phone-call").on("click",function(){$(".modal_mouse_out").addClass("active")}),$(".close-mouse").on("click",function(){$(".modal_mouse_out").removeClass("active")});var l=!0;$(document).mouseleave(function(){l&&$(".modal_mouse_out").addClass("active"),l=!1});var i=60;function s(){7<i?($(".lastpack").html(i-1),i--):$(".lastpack").html(7),localStorage.setItem("goods_item",i)}if(localStorage.getItem("goods_item")?(i=localStorage.getItem("goods_item"),$(".lastpack").html(i)):$(".lastpack").html("60"),setInterval(s,15e3),,$('input[name="phone"]').mask("+7 (999) 999-99-99"),-1<window.location.href.indexOf("callback=")){var r=window.location.href.split("callback=")[1];r=parseInt(r),alert("Есть параметр callback, со значением:"+r)}});
+$(document).ready(function() {
+  
+  ymaps.ready(function(){
+    ymaps.geolocation.get({
+      provider: "yandex"
+    }).then(function (result) {
+      var g = result.geoObjects.get(0);
+      if (g.getCountry() != 'Россия'){
+        $('.country_span').html('Страны СНГ');
+      } else {
+        $('.country_span').html(g.getLocalities()[0]);
+      }
+    });
+  });
+
+  $('.confident-link').click(function() {
+      $('.hidden-conf').show();
+      if ($(window).height() < 760) {
+          $('.conf-info').css({
+              'height': ($(window).height() - 120),
+              'overflow-y': 'scroll'
+          });
+      };
+      return false;
+  });
+  $('.close-conf').click(function() {
+      $('.hidden-conf').hide();
+      return false;
+  });
+  if ($('select').length) {} else {
+      $('.c-s').css({
+          'display': 'none'
+      })
+  };
+  
+  
+  var date, month, year, day;
+  date = new Date();
+  
+  day = date.getDate() + 2;
+  month = date.getMonth() + 1;
+  year = date.getFullYear();
+  var price_date = document.querySelectorAll('.price-old-x--top');
+  for (var i=0; i<price_date.length;i++){
+    price_date[i].innerHTML = day + '.' + month + '.' + year;
+  }
+  
+  
+  $('.header__call').on('click', function(){
+    $('.modal_mouse_out').addClass('active');
+  });
+  $('.phone-call').on('click', function(){
+    $('.modal_mouse_out').addClass('active');
+  });
+  
+  $('.close-mouse').on('click', function(){
+    $('.modal_mouse_out').removeClass('active');
+  });
+  
+  var isEvent = true;
+  $(document).mouseleave(function(){
+    if (isEvent){
+      $('.modal_mouse_out').addClass('active');
+    }
+    isEvent = false;
+  });
+  
+  
+  function start_timer(){
+    setInterval(timer, 15000);
+  }
+  
+  var goods_item = 60;
+  
+  if(localStorage.getItem('goods_item')){
+    goods_item = localStorage.getItem('goods_item');
+    $('.lastpack').html(goods_item);
+  } else {
+    $('.lastpack').html('60');
+  }
+  
+  function timer(){
+    if(goods_item > 7){
+      $('.lastpack').html(goods_item - 1);
+      goods_item--;
+    } else {
+      $('.lastpack').html(7);
+    }
+    localStorage.setItem("goods_item", goods_item);
+  }
+
+  start_timer();
+  
+  
+  
+  $('input[name="phone"]').mask('+7 (999) 999-99-99');
+  
+  
+  if (window.location.href.indexOf("callback=") > -1){
+    var ind = window.location.href;
+    var arr = ind.split('callback=');
+    var num = arr[1];
+    num = parseInt(num);
+    
+    alert('Есть параметр callback, со значением:' + num);
+  }
+  
+});
