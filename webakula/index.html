@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="en" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--	<link rel="shortcut icon" href="favicon.png" />-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/dropkick_select_option/dropkick.css">
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content d-flex justify-between">
+        <div class="logo">
+          <a href="\">
+          <img src="assets/images/logo.png" alt="Vitist">
+          <span class="d-none logo-text">Женская одежда<br> от производителя</span>
+          </a>
+        </div>
+        <div class="filter-menu">
+          <div class="d-flex">
+            <div class="filter-menu-item">
+              <p class="filter-name">Одежда на каждый день </p>
+              <ul class="filter-list">
+                <li><a href="#">Одежда 1</a></li>
+                <li><a href="#">Одежда 2</a></li>
+                <li><a href="#">Одежда 3</a></li>
+                <li><a href="#">Одежда 4</a></li>
+                <li><a href="#">Одежда 5</a></li>
+                <li><a href="#">Одежда 1</a></li>
+                <li><a href="#">Одежда 2</a></li>
+                <li><a href="#">Одежда 3</a></li>
+                <li><a href="#">Одежда 4</a></li>
+              </ul>
+            </div>
+            <div class="filter-menu-item">
+              <p class="filter-name">Спортивная одежда </p>
+              <ul class="filter-list">
+                <li><a href="#">Спортивная 1</a></li>
+                <li><a href="#">Спортивная 2</a></li>
+                <li><a href="#">Спортивная 3</a></li>
+                <li><a href="#">Спортивная 4</a></li>
+                <li><a href="#">Спортивная 5</a></li>
+              </ul>
+            </div>
+            <div class="filter-menu-item">
+              <p class="filter-name">Верхняя одежда </p>
+              <ul class="filter-list">
+                <li><a href="#">Верхняя 1</a></li>
+                <li><a href="#">Верхняя 2</a></li>
+                <li><a href="#">Верхняя 3</a></li>
+                <li><a href="#">Верхняя 4</a></li>
+                <li><a href="#">Верхняя 5</a></li>
+              </ul>
+            </div>
+            <div class="filter-menu-item">
+              <a class="discounts" href="#">Скидки</a>
+            </div>
+            <div class="filter-menu-item">
+              <a class="discounts" href="#">Скидки</a>
+            </div>
+            <div class="filter-menu-item">
+              <a class="discounts" href="#">Скидки</a>
+            </div>
+            <div class="header-menu-block" id="header-menu-block">
+              <ul class="header-menu">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Покупателям</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Условия опта</a></li>
+                <li><a href="#">Дропшиппинг</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li>
+                  <ul class="phone-number d-none">
+                    <li><a href="tel:+380992320308">+380992320308</a></li>
+                    <li><a href="tel:+380972320308">+380972320308</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="login d-flex align-center">
+          <div class="menu-mob-btn d-flex justify-center" id="menu-mob-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="lang">
+            <p class="top-select">
+              <select name="state" id="state">
+                <option value="1">Uah</option>
+                <option value="2">rus</option>
+              </select>
+            </p>
+            <p class="top-select language">
+              <select name="language" id="language">
+                <option value="1">Ru</option>
+                <option value="2">uk</option>
+              </select>
+            </p>
+          </div>
+          <div class="search-btn">
+            <i class="fab fa-sistrix"></i>
+          </div>
+          <div class="login-btn">
+            <i class="far fa-user"></i>
+          </div>
+          <div class="basket">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="basket-num">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="sale parallax-window" data-parallax="scroll" data-image-src="assets/images/headar-img.jpg">
+    <div class="wrapper">
+      <div class="d-flex justify-end">
+        <div class="sale-content">
+          <h1>Slae</h1>
+          <p class="text_"><span>до 30% на одежду</span></p>
+          <p><a class="btn_ btn_sale" href="#">Перейти к покупкам &rsaquo;</a></p>
+        </div>
+      </div>
+      <p class="scroll_btn"><span>scroll</span></p>
+    </div>
+  </section>
+  
+  <section class="creative">
+    <div class="wrapper d-flex justify-end">
+      <div class="creative-img" style="background-image: url(assets/images/girl-shoping.jpg)">
+      </div>
+      <div class="creative-content">
+        <h2 class="text_">Женская одежда оптом<br> 
+        от производителя<br>
+        creative в украине</h2>
+        <div class="creative-text">
+          <div class="force">
+            <p>Женская одежда оптом от производителя в Украине пользуется огромным спросом у владельцев магазинов и организаторов совместных покупок в течение многих лет. 
+            Бренд Vitist занимается разработкой и пошивом одежды с 2012 года. Каждые 3 месяца мы представляем новые коллекции, которые соответствуют последним тенденциям мира моды.</p><br>
+            <p>Здесь вы можете купить женскую одежду оптом или в розницу по разумной цене. Модельер, конструктор и технолог торговой марки Vitist разрабатывают актуальные модели, которые прекрасно садятся на разные фигуры, способны подчеркнуть все их достоинства и скрыть недостатки. Каждое изделие представлено в разнообразной цветовой гамме и размерах.</p><br>
+            <p>Женская одежда оптом от производителя в Украине пользуется огромным спросом у владельцев магазинов и организаторов совместных покупок в течение многих лет. 
+            Бренд Vitist занимается разработкой и пошивом одежды с 2012 года. Каждые 3 месяца мы представляем новые коллекции, которые соответствуют последним тенденциям мира моды.</p><br>
+            <p>Здесь вы можете купить женскую одежду оптом или в розницу по разумной цене. Модельер, конструктор и технолог торговой марки Vitist разрабатывают актуальные модели, которые прекрасно садятся на разные фигуры, способны подчеркнуть все их достоинства и скрыть недостатки. Каждое изделие представлено в разнообразной цветовой гамме и размерах.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="slider-section">
+    <div class="wrapper">
+      
+      <div id="slider">
+        <div class="slide">
+          <div class="d-flex flex-column">
+            <div class="slide-img">
+              <img src="assets/images/slide1.png" alt="">
+            </div>
+            <div class="slide-content">
+              <h3>Коктейльное платье-кейп Каролайн</h3>
+              <div class="slide-price">
+                <p class="price">600 грн</p>
+                <p class="old-price"><span class="remove-price">1200 грн</span> <span>розница</span></p>
+                <p><a class="btn_ slide_btn" href="#">В корзину &nbsp;<i class="fas fa-shopping-bag"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="d-flex flex-column">
+            <div class="slide-img">
+              <img src="assets/images/slide2.png" alt="">
+            </div>
+            <div class="slide-content">
+              <h3>Платье из органзы «DeLakrua»</h3>
+              <div class="slide-price">
+                <p class="price">469 грн</p>
+                <p class="old-price"><span>849 грн</span> <span>розница</span></p>
+                <p><a class="btn_ slide_btn" href="#">В корзину &nbsp;<i class="fas fa-shopping-bag"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="d-flex flex-column">
+            <div class="slide-img">
+              <img src="assets/images/slide3.png" alt="">
+            </div>
+            <div class="slide-content">
+              <h3>Стильное черное платье «Ashley»</h3>
+              <div class="slide-price">
+                <p class="price">800 грн</p>
+                <p class="old-price"><span>1600 грн</span> <span>розница</span></p>
+                <p><a class="btn_ slide_btn" href="#">В корзину &nbsp;<i class="fas fa-shopping-bag"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="d-flex flex-column">
+            <div class="slide-img">
+              <img src="assets/images/slide3.png" alt="">
+            </div>
+            <div class="slide-content">
+              <h3>Стильное черное платье «Ashley»</h3>
+              <div class="slide-price">
+                <p class="price">800 грн</p>
+                <p class="old-price"><span>1600 грн</span> <span>розница</span></p>
+                <p><a class="btn_ slide_btn" href="#">В корзину &nbsp;<i class="fas fa-shopping-bag"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <p class="more-catalog"><a href="#">Перейти в каталог &rsaquo;</a></p>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-content d-flex align-center">
+        <div class="footer-logo">
+          <img src="assets/images/foot-logo.png" alt="">
+        </div>
+        <div class="footer-links">
+          <ul class="footer-menu">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Покупателям</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Условия опта</a></li>
+            <li><a href="#">Дропшиппинг</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="footer-contacts d-flex align-center">
+            <div class="footer-phone">
+              <p><a href="tel:+380992320308">+380992320308</a></p>
+              <p><a href="tel:+380972320308">+380972320308</a></p>
+            </div>
+            <div class="question">
+              <a href="#" class="btn_ question-btn">Задать вопрос</a>
+            </div>
+            <div class="footer-soc">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrapper d-flex justify-between align-center">
+        <p>&copy; Creative-2018. Все права защищены</p>
+        <p class="d-flex align-center"><a href="#">Создание сайта</a><a href="#"><img src="assets/images/web-logo.png" alt=""></a></p>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+  <script src="libs/jquery/jquery.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/jquery.nicescroll-master/jquery.nicescroll-master/jquery.nicescroll.min.js"></script>
+  <script src="libs/parallax.js-1.5.0/parallax.min.js"></script>
+  <script src="libs/dropkick_select_option/dropkick.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
