@@ -348,7 +348,7 @@
             var positionOffset = this.o.vertical ? lastPoint.y - firstPoint.y : lastPoint.x - firstPoint.x;
             var timeOffset = lastPoint.time - firstPoint.time;
 
-            var D = timeOffset / 15 / this.o.multiplier;
+            var D = timeOffset / 40 / this.o.multiplier;
             this.decVel = positionOffset / D || 0;
 
             var newTargetPosition = this.targetPosition + (this.decVel * 12);
