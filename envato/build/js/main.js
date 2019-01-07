@@ -24,22 +24,6 @@ $(document).ready(function($){
       trackItems[i].innerHTML = paginationItems[i].innerHTML
     }
     
-    var slideW = $('.ms-slide').width();
-    
-    tracks.addEventListener('click', function(){
-      var tracksTransform = (tracks.style.transform);
-      var s = '';
-      for(var i=0; i<tracksTransform.length; i++){
-        if(+tracksTransform[i] === +tracksTransform[i]){
-         s += tracksTransform[i]
-        }
-      }
-      if(s > (paginationItems.length - 2) * slideW){
-//        console.log(s, (paginationItems.length - 2) * slideW)
-        
-      }
-    })
-    
     
     
   }
