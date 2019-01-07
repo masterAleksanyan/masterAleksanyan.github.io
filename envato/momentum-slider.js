@@ -453,7 +453,7 @@
                 } else {
                     _.renderTarget();
                 }
-            }, initial ? 0 : 500, function(t) { return t * (2 - t); });
+            }, initial ? 0 : 1000, function(t) { return t * (2 - t); });
         },
         onChangeCurrentIndex: function (index) {
             var currentIndex = this.o.loop ? index - this.o.loop : index;
