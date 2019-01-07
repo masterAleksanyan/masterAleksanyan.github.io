@@ -1,0 +1,127 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #999;
+}
+
+
+.sliders-container{
+  display: none;
+}
+@media screen and (max-width: 1024px){
+  .ms--images {
+    position: relative;
+    overflow: hidden;
+  }
+  .ms--images.ms-container--horizontal {
+    width: 100%;
+    height: 330px;
+    max-width: 100%;
+  }
+  
+  .ms--images.ms-container--horizontal .ms-slide {
+    display: inline-flex;
+  }
+  .ms--images .ms-track {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .ms--images .ms-slide {
+    align-items: center;
+    justify-content: center;
+    width: 31vw;
+    height: 330px;
+  }
+  
+  .pagination {
+    display: none;
+  }
+
+  .ms-slide{
+    padding: 0 15px;
+  }
+  .ms-slide > a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .ms-slide .post-thumb {
+    height: 60%;
+    overflow: hidden;
+  }
+  
+  .ms-slide .post-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .ms-slide:hover .post-thumb img{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  .ms-slide .post-details{
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 100%;
+    height: calc(50% + 30px);
+    background-color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+  }
+  .ms-slide .post-details h4{
+    margin-top: 10px;
+  }
+  .ms-slide:hover .post-details{
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  .ms-slide .cat-name{
+    position: relative;
+    top: 10px;
+  }
+  .ms-slide:hover .cat-name{
+    top: -10px;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  
+  .sliders-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .ms--images .ms-slide {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .ms--images .ms-track{
+    margin-left: 7vw;
+  }
+  .ms--images .ms-slide {
+    width: 80vw;
+  }
+}
+
+
