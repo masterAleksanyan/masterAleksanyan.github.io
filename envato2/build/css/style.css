@@ -206,7 +206,7 @@ body{
   .statistics-inner{
     flex-wrap: wrap;
   }
-  .statistics-inner > *{
+  .statistics-inner > .stat{
     flex-basis: 45%;
   }
 }
