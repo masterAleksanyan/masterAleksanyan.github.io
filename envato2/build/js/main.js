@@ -116,16 +116,16 @@ $(document).ready(function($){
     myMap.geoObjects
       .add(myGeoObject)
       .add(new ymaps.Placemark([55.828960, 37.579290], {
-          balloonContent: '<input id="milash" type="text" value="улица Милашенкова, 22" style="display: none;"/><label for="milash">Россия, Москва, <br> ул. Милашенкова, 22</label>'
+          balloonContent: 'Россия, Москва, <br> ул. Милашенкова, 22'
       }))
       .add(new ymaps.Placemark([55.887111,37.523574], {
-          balloonContent: '<input id="klyaz" type="text" value="Клязьминская улица, 11к4" style="display: none;"/><label for="klyaz">Клязьминская ул., <br> д. 11, корп. 4</label>'
+          balloonContent: 'Клязьминская ул., <br> д. 11, корп. 4'
       }))
       .add(new ymaps.Placemark([55.781086, 37.613029], {
-          balloonContent: '<input id="selez" type="text" value="Селезнёвская улица, 34к3" style="display: none;"/><label for="selez">Россия, Москва, <br> Селезнёвская улица, 34к3</label>'
+          balloonContent: 'Россия, Москва, <br> Селезнёвская улица, 34к3'
       }))
       .add(new ymaps.Placemark([55.891453, 37.585677], {
-          balloonContent: '<input id="altufevo" type="text" value="Алтуфьевское шоссе, 85" style="display: none;"/><label for="altufevo">Россия, Москва, <br> Алтуфьевское шоссе, 85</label>'
+          balloonContent: 'Россия, Москва, <br> Алтуфьевское шоссе, 85'
       }));
     
     var control = myMap.controls.get('routePanelControl');
@@ -171,26 +171,26 @@ $(document).ready(function($){
   });
   
   
-  const MAP = document.getElementById('map');
-  MAP.addEventListener('click', function(ev){
-    if(ev.target.value){
-      document.querySelector('.ymaps-2-1-72-controls__toolbar_left')
-        .style.display = 'block';
-      document.getElementById('btn_yandex').innerHTML = "x";
-      ymaps_i(ev.target.value);
-    }
-  });
+//  const MAP = document.getElementById('map');
+//  MAP.addEventListener('click', function(ev){
+//    if(ev.target.value){
+//      document.querySelector('.ymaps-2-1-72-controls__toolbar_left')
+//        .style.display = 'block';
+//      document.getElementById('btn_yandex').innerHTML = "x";
+//      ymaps_i(ev.target.value);
+//    }
+//  });
   
   
-  function ymaps_i(a){
-    let kuda = /^Куда$/;
-    let ymaps_input = document.querySelectorAll('.ymaps-2-1-72-route-panel-input__input');
-    for(let i = 0; i<ymaps_input.length; i++){
-      if(ymaps_input[i].placeholder.match(kuda)){
-        ymaps_input[i].value = a;
-      }
-    }
-  }
+//  function ymaps_i(a){
+//    let kuda = /^Куда$/;
+//    let ymaps_input = document.querySelectorAll('.ymaps-2-1-72-route-panel-input__input');
+//    for(let i = 0; i<ymaps_input.length; i++){
+//      if(ymaps_input[i].placeholder.match(kuda)){
+//        ymaps_input[i].value = a;
+//      }
+//    }
+//  }
   
 });
 
