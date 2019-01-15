@@ -202,7 +202,14 @@ body{
 
 
 
-
+@media only screen and (max-width: 998px){
+  .statistics-inner{
+    flex-wrap: wrap;
+  }
+  .statistics-inner > *{
+    flex-basis: 45%;
+  }
+}
 
 
 
