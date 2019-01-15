@@ -67,8 +67,6 @@ $(document).ready(function($){
   
   
   
-  
-  
 //  if($(window).width() < 1024){
 //    
 //    // Get pagination items
@@ -94,6 +92,8 @@ $(document).ready(function($){
 //    }
 //    
 //  }
+  
+  
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [55.828960, 37.579290],
@@ -119,7 +119,7 @@ $(document).ready(function($){
           balloonContent: '<input id="milash" type="text" value="улица Милашенкова, 22" style="display: none;"/><label for="milash">Россия, Москва, <br> ул. Милашенкова, 22</label>'
       }))
       .add(new ymaps.Placemark([55.887111,37.523574], {
-          balloonContent: '<input id="klyaz" type="text" value="Клязьминская улица, 11 к. 4" style="display: none;"/><label for="klyaz">Клязьминская ул., <br> д. 11, корп. 4</label>'
+          balloonContent: '<input id="klyaz" type="text" value="Клязьминская улица, 11к4" style="display: none;"/><label for="klyaz">Клязьминская ул., <br> д. 11, корп. 4</label>'
       }))
       .add(new ymaps.Placemark([55.781086, 37.613029], {
           balloonContent: '<input id="selez" type="text" value="Селезнёвская улица, 34к3" style="display: none;"/><label for="selez">Россия, Москва, <br> Селезнёвская улица, 34к3</label>'
@@ -157,27 +157,30 @@ $(document).ready(function($){
     
 });
   
-//  document.getElementById('map').addEventListener('click', function(ev){
-//    console.dir(ev.target)
-//  });
-  
   
   document.getElementById('btn_yandex').addEventListener('click', function(){
-    let ymaps = document.querySelector('.ymaps-2-1-72-controls__toolbar_left');
-    ymaps.style.display = 'block';
-    this.style.zIndex = -1;
+    if(this.innerHTML == "x"){
+      document.querySelector('.ymaps-2-1-72-controls__toolbar_left')
+        .style.display = "none";
+      this.innerHTML = "Как добраться";
+    } else {
+      document.querySelector('.ymaps-2-1-72-controls__toolbar_left')
+        .style.display = 'block';
+      this.innerHTML = "x";
+    }
   });
   
   
   const MAP = document.getElementById('map');
   MAP.addEventListener('click', function(ev){
-    let ymaps = document.querySelector('.ymaps-2-1-72-controls__toolbar_left');
     if(ev.target.value){
-      ymaps.style.display = 'block';
-      document.getElementById('btn_yandex').style.zIndex = -1;
+      document.querySelector('.ymaps-2-1-72-controls__toolbar_left')
+        .style.display = 'block';
+      document.getElementById('btn_yandex').innerHTML = "x";
       ymaps_i(ev.target.value);
     }
   });
+  
   
   function ymaps_i(a){
     let kuda = /^Куда$/;
@@ -185,25 +188,12 @@ $(document).ready(function($){
     for(let i = 0; i<ymaps_input.length; i++){
       if(ymaps_input[i].placeholder.match(kuda)){
         ymaps_input[i].value = a;
-        console.dir(ymaps_input[i])
       }
     }
   }
   
-  
 });
 
-//ymaps-2-1-72-route-panel
-
-//ymaps-2-1-72-route-panel-input
-
-//let ymaps_interval = setInterval(function(){
-//  if(document.querySelectorAll('.ymaps-2-1-72-route-panel-input__input').length){
-//    ymaps_i();
-//    clearInterval(ymaps_interval);
-//  }
-//}, 50);
-//
 
 
 
