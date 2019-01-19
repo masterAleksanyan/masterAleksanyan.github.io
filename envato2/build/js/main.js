@@ -171,27 +171,6 @@ $(document).ready(function($){
   });
   
   
-//  const MAP = document.getElementById('map');
-//  MAP.addEventListener('click', function(ev){
-//    if(ev.target.value){
-//      document.querySelector('.ymaps-2-1-72-controls__toolbar_left')
-//        .style.display = 'block';
-//      document.getElementById('btn_yandex').innerHTML = "x";
-//      ymaps_i(ev.target.value);
-//    }
-//  });
-  
-  
-//  function ymaps_i(a){
-//    let kuda = /^Куда$/;
-//    let ymaps_input = document.querySelectorAll('.ymaps-2-1-72-route-panel-input__input');
-//    for(let i = 0; i<ymaps_input.length; i++){
-//      if(ymaps_input[i].placeholder.match(kuda)){
-//        ymaps_input[i].value = a;
-//      }
-//    }
-//  }
-  
 });
 
 
