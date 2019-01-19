@@ -116,16 +116,16 @@ $(document).ready(function($){
     myMap.geoObjects
       .add(myGeoObject)
       .add(new ymaps.Placemark([55.828960, 37.579290], {
-          balloonContent: 'Россия, Москва, <br> ул. Милашенкова, 22'
+          balloonContent: '<a class="ymaps_link" href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&lang=ru&lat=55.828960&lon=37.579290" >Россия, Москва, <br> ул. Милашенкова, 22</a>'
       }))
       .add(new ymaps.Placemark([55.887111,37.523574], {
-          balloonContent: 'Клязьминская ул., <br> д. 11, корп. 4'
+          balloonContent: '<a class="ymaps_link" href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&lang=ru&lat=55.887111&lon=37.523574" >Клязьминская ул., <br> д. 11, корп. 4</a>'
       }))
       .add(new ymaps.Placemark([55.781086, 37.613029], {
-          balloonContent: 'Россия, Москва, <br> Селезнёвская улица, 34к3'
+          balloonContent: '<a class="ymaps_link" href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&lang=ru&lat=55.781086&lon=37.613029" >Россия, Москва, <br> Селезнёвская улица, 34к3</a>'
       }))
       .add(new ymaps.Placemark([55.891453, 37.585677], {
-          balloonContent: 'Россия, Москва, <br> Алтуфьевское шоссе, 85'
+          balloonContent: '<a class="ymaps_link" href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&lang=ru&lat=55.891453&lon=37.585677" >Россия, Москва, <br> Алтуфьевское шоссе, 85</a>'
       }));
     
     var control = myMap.controls.get('routePanelControl');
