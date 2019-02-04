@@ -27,7 +27,7 @@
             multiplier: 1,
             bounceCoefficient: 0.3,
             bounceMax: 100,
-            loop: 0,
+            loop: 2,
             interactive: true,
             reverse: false,
             currentIndex: 0
@@ -348,7 +348,7 @@
             var positionOffset = this.o.vertical ? lastPoint.y - firstPoint.y : lastPoint.x - firstPoint.x;
             var timeOffset = lastPoint.time - firstPoint.time;
 
-            var D = timeOffset / 40 / this.o.multiplier;
+            var D = timeOffset / 60 / this.o.multiplier;
             this.decVel = positionOffset / D || 0;
 
             var newTargetPosition = this.targetPosition + (this.decVel * 12);
@@ -407,30 +407,30 @@
 //          console.log(this.targetPosition, to)
             this.animateInstance = animate(function(progress) {
                 _.targetPosition = to > from ? from + ((to - from) * progress) : from - ((from - to) * progress); // 0 - ((0 - -2100) * progress)
-                if($(window).width() < 1024 && $(window).width() > 767){
-                  if(from < -(_.step * (_.sliderLength - 3) + _.step/3)){
-                    _.targetPosition = 0;
-                  }
-                  if(from > _.step/3){
-                    _.targetPosition = -(_.step * (_.sliderLength - 3));
-                  }
-                }
-                if($(window).width() < 768 && $(window).width() > 520){
-                  if(from < -(_.step * (_.sliderLength - 2) + _.step/3)){
-                    _.targetPosition = 0;
-                  }
-                  if(from > _.step/4){
-                    _.targetPosition = -(_.step * (_.sliderLength - 2));
-                  }
-                }
-                if($(window).width() < 521){
-                  if(from < -(_.step * (_.sliderLength - 1) + _.step/3)){
-                    _.targetPosition = 0;
-                  }
-                  if(from > _.step/4){
-                    _.targetPosition = -(_.step * (_.sliderLength - 1));
-                  }
-                }
+//                if($(window).width() < 1024 && $(window).width() > 767){
+//                  if(from < -(_.step * (_.sliderLength - 3) + _.step/3)){
+//                    _.targetPosition = 0;
+//                  }
+//                  if(from > _.step/3){
+//                    _.targetPosition = -(_.step * (_.sliderLength - 3));
+//                  }
+//                }
+//                if($(window).width() < 768 && $(window).width() > 520){
+//                  if(from < -(_.step * (_.sliderLength - 2) + _.step/3)){
+//                    _.targetPosition = 0;
+//                  }
+//                  if(from > _.step/4){
+//                    _.targetPosition = -(_.step * (_.sliderLength - 2));
+//                  }
+//                }
+//                if($(window).width() < 521){
+//                  if(from < -(_.step * (_.sliderLength - 1) + _.step/3)){
+//                    _.targetPosition = 0;
+//                  }
+//                  if(from > _.step/4){
+//                    _.targetPosition = -(_.step * (_.sliderLength - 1));
+//                  }
+//                }
                 var sliderMin = _.o.reverse ? 0 : -(_.sliderLength - 1) * _.step;
                 var sliderMax = _.o.reverse ? (_.sliderLength - 1) * _.step : 0;
                 if (!back &&
@@ -453,7 +453,7 @@
                 } else {
                     _.renderTarget();
                 }
-            }, initial ? 0 : 500, function(t) { return t * (2 - t); });
+            }, initial ? 0 : 2000, function(t) { return t * (2 - t); });
         },
         onChangeCurrentIndex: function (index) {
             var currentIndex = this.o.loop ? index - this.o.loop : index;
