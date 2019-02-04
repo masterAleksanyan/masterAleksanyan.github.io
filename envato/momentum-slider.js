@@ -236,7 +236,7 @@
         onMove: function (ev) {
             if (this.enabled && this.pointerActive) {
                 this.pointerMoved = true;
-                ev.preventDefault();
+//                ev.preventDefault();
                 var event = normalizeEvent(ev);
 
                 if (event.id === this.pointerId) {
