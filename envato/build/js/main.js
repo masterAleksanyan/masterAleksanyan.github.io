@@ -1,6 +1,6 @@
 $(document).ready(function($){
   
-  if($(window).width() < 1024){
+  if($(window).width() < 1025){
     
     // Get pagination items
     var slidersContainer = document.querySelector('.sliders-container');

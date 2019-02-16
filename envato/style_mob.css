@@ -1,0 +1,131 @@
+@media only screen and (max-width: 1024px){
+  .social_helpers{
+    display: none;
+  }
+  #center, #footer, #header, .top_head, .mid_head{
+    width: 100%;
+  }
+  .footer_top {
+	  width: 100%;
+    box-sizing: border-box;
+  }
+  .mid_head > *{
+    float: none;
+  }
+  .container > *{
+    float: none;
+    margin-top: 50px;
+  }
+  .mid_head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo{
+    margin-left: 15px;
+  }
+  .blue_block > div{
+    float: none;
+    width: 100%;
+  } 
+  
+}
+
+@media only screen and (max-width: 768px){
+  .container > div{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .big_button{
+    margin: 5px auto !important;
+    float: none !important;
+    box-sizing: border-box;
+  }
+  .helper_block{
+    display: flex;
+    justify-content: space-between;
+  }
+  .helper_block li{
+    margin: 0;
+    float: none;
+  }
+  .main_block, .blue_block{
+    padding: 12px;
+  }
+  .blue_block{
+    margin-bottom: 10px;
+  }
+  .bot_head{
+    padding-left: 12px;
+  }
+  .footer_block{
+    margin-top: 40px;
+  }
+  .footer_block > i, .footer_block span{
+    margin-top: -50px;
+  }
+  .content {
+    margin-top: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  *, *::after, *::before{box-sizing: border-box;}
+  .helper_block{
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider_wrap{
+    width: 93%;
+    margin: 0 auto;
+  }
+  
+  .slider_wrap .slider{
+    width: 100% !important;
+  }
+  .information blockquote.tip_for_you{
+    position: static;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footer_top{
+    padding: 10px;
+  }
+  .footer_top > *{
+    float: none;
+    width: 100%;
+    min-height: 40px;  
+  }
+  .helper_info{
+    padding: 0;
+  }
+  .helper_block{
+    padding-left: 0;
+  }
+  .money_back{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .top_social li:first-child{
+    display: none;
+  }
+  .top_nav ul li a{
+    padding: 0 10px;
+    font-size: 2.7vw;
+  }
+  .footer_block{
+    margin-top: 0;
+    padding: 0 10px;
+  }
+  
+  .tabs li a span{
+    padding: 0 5px;
+  }
+  .marker_block{
+    margin: 20px 0 20px 10px;
+  }
+}
