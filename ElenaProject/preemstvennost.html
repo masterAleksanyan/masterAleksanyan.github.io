@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Заголовок</title>
+	<meta charset="utf-8" >
+	<meta name="description" content="" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<link rel="shortcut icon" href="favicon.png" >
+  <!--  styles  -->
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Roboto+Slab:400,700|Yeseva+One" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <div class="logo-img">
+            <img src="build/images/logo.png" alt="СЕМЕЙНЫЙ ПРОЕКТ">
+          </div>
+          <h1><span>СЕМЕЙНЫЙ</span><span>ПРОЕКТ</span></h1>
+        </a>
+      </div>
+      
+      <div class="menu-left">
+        <a href="#"><span class="left-icon"></span>Главная страница</a>
+      </div>
+      <div class="header-menu-block">
+        <div class="header-menu">
+          <button class="header-menu_btn" id="menu_btn"><p>Меню</p><i class="icon-menu"></i></button>
+          <ul class="header-menu_list">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#">География проекта</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты и вопросы</a></li>
+            <li class="mobile-show">
+              <p><a href="#">Главная страница</a></p>
+              <p><a href="#">География проекта</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-right">
+        <a href="#">География проекта<span class="right-icon"></span></a>
+      </div>
+      
+      <div class="header-search">
+        <form action="#" class="header-form">
+          <input class="header-form__input" type="search" placeholder="Поиск людей, мест, событий...">
+          <button class="header-form__btn" type="button"><i class="icon-search"></i></button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="content">
+      <div class="verification-page">
+        <div class="verification-content">
+          <div class="left-content">
+            <div class="preem_about">
+              <h2>Суть преемственности</h2>
+              <ul class="preem_about-list">
+                <li>Владелец аккаунта имеет возможность передать право пользования своим аккаунтом любому третьему лицу, по своему усмотрению. Для этого он может оформить своё волеизъявление, заполнив прилагаемую форму. Заверение этой формы происходит: либо непосредственно на нашем Ресурсе, цифровой подписью (персональным кодом) владельца, либо письменно оформляется у адвоката или нотариуса и сканированный формат заверенного документа в электронной форме прикрепляется вложением в прилагаемую форму.</li>
+                <li>Владелец аккаунта имеет возможность передать право пользования своим аккаунтом непосредственно администрации Ресурса, по наступлению какого–либо конкретного события или по истечению конкретно указанного времени для последующего помещения этого ЛК и/или его части в ЦБ. Для этого он может оформить своё волеизъявление, заполнив прилагаемую форму. Заверение этой формы происходит: либо непосредственно на нашем Ресурсе, цифровой подписью (персональным кодом) владельца ЛК, либо письменно оформляется у адвоката или нотариуса и сканированный формат заверенного документа в электронной форме прикрепляется вложением в прилагаемую форму.</li>
+                <li>Владелец аккаунта имеет возможность самостоятельно открыть свой Личный Кабинет пользователя, переслав его весь целиком или только определённую его часть, в ЦБ, не передавая никому никаких прав на пользование им, для нахождения ЛК на Ресурсе в ЦБ без ограничения по времени и доступу. Для этого он может оформить своё волеизъявление, заполнив прилагаемую форму. Заверение этой формы происходит: либо непосредственно на нашем Ресурсе, цифровой подписью (персональным кодом) владельца, либо письменно оформляется у адвоката или нотариуса и сканированный формат заверенного документа в электронной форме прикрепляется вложением в прилагаемую форму.</li>
+              </ul>
+            </div>
+            <div class="preem_understand">
+              <input id="understand" type="checkbox">
+              <label for="understand">"Мне понятно"</label>
+            </div>
+          </div>
+          <div class="right-content">
+            <p class="preem-form_title">Информирую руководство проекта что я хочу завещать свой личный кабинет</p>
+            <p class="preem-form_about">Введите здесь максимальное количество информации, по которой можно будет идентифицировать человека</p>
+            <form id="preem-form" class="preem-form" action="#">
+              <p>Фамилия</p>
+              <input type="text" disabled="disabled">
+              <p>Имя</p>
+              <input type="text" disabled="disabled">
+              <p>Отчество</p>
+              <input type="text" disabled="disabled">
+              <p>Дата рождения</p>
+              <div>
+                <select name="year" id="year" disabled="disabled">
+                  <option>Год</option>
+                </select>
+                <select name="year" id="year" disabled="disabled">
+                  <option>Месяц</option>
+                </select>
+                <select name="year" id="year" disabled="disabled">
+                  <option>Число</option>
+                </select>
+              </div>
+              <input class="preem_btn verific_btn" type="submit" value="Завещаю" disabled="disabled">
+            </form>
+            <p class="preem-form_footer">Теперь вы должны оформить завещание нотариально, что бы ваш наследник мог вступить в права, предъявив документ о наследии.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+      <ul class="footer__menu">
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Спонсорство</a></li>
+        <li><a href="#">Преемственность</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">О верификации</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  <!--  scripts  -->
+  <script src="build/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
