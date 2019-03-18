@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Заголовок</title>
+	<meta charset="utf-8" >
+	<meta name="description" content="" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+<!--	<link rel="shortcut icon" href="favicon.ico" >-->
+  <!--  styles  -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="logo">
+        <a href="#">
+          <img class="logo__img" src="build/images/logo.svg" alt="Apple Tomsk">
+        </a>
+      </div>
+      <div class="menu align-center" id="header_menu">
+        <span id="close_btn" class="close_btn">&Cross;</span>
+        <ul class="menu__list">
+          <li><a class="menu__list-link" href="#">О нас</a></li>
+          <li class="menu__list-remont">
+            <div class="problems">
+              <div class="problems__devices">
+                <span class="problems__devices-name active" data-device="re-ipone"><i class="problems__devices-ic icon-phone"></i>iPhone</span>
+                <span class="problems__devices-name" data-device="re-ipad"><i class="problems__devices-ic icon-ipad"></i>iPad</span>
+                <span class="problems__devices-name" data-device="re-mac"><i class="problems__devices-ic icon-desktop"></i>Mac</span>
+              </div>
+              <div id="re-ipone" class="problems__device active">
+                <div class="problems__version align-center">
+                  <p class="problems__version-mob">Выберите модель</p>
+                  <ul class="problems__version-list align-center">
+                    <li class="active">4</li>
+                    <li>4s</li>
+                    <li>5</li>
+                    <li>5s</li>
+                    <li>6</li>
+                    <li>6Plus</li>
+                    <li>6s</li>
+                    <li>7</li>
+                    <li>7Plus</li>
+                    <li>8</li>
+                    <li>8Plus</li>
+                    <li>X</li>
+                    <li>Xs</li>
+                    <li>Xs Max</li>
+                    <li><a class="all-phone" href="#">Все iPhone <i class="ic-left"></i></a></li>
+                  </ul>
+                  <a class="problems__version-btn btn_" href="#">Смотреть прайс</a>
+                </div>
+                <div class="problems__list">
+                  <h2 class="problems__list-title">Ремонт</h2>
+                  <div class="problems__list-content">
+                    <ul class="problems__list-item">
+                      <li>Дисплей</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Электроника</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Корпус</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Фурнитура</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Аудио</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="re-ipad" class="problems__device">
+                <div class="problems__version align-center">
+                  <p class="problems__version-mob">Выберите модель</p>
+                  <ul class="problems__version-list align-center">
+                    <li class="active">4</li>
+                    <li>X</li>
+                    <li>Xs</li>
+                    <li>Xs Max</li>
+                    <li><a class="all-phone" href="#">Все iPhone <i class="ic-left"></i></a></li>
+                  </ul>
+                  <a class="problems__version-btn btn_" href="#">Смотреть прайс</a>
+                </div>
+                <div class="problems__list">
+                  <h2 class="problems__list-title">Ремонт</h2>
+                  <div class="problems__list-content">
+                    <ul class="problems__list-item">
+                      <li>Дисплей</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Электроника</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Корпус</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Фурнитура</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="re-mac" class="problems__device">
+                <div class="problems__version align-center">
+                  <p class="problems__version-mob">Выберите модель</p>
+                  <ul class="problems__version-list align-center">
+                    <li class="active">4</li>
+                    <li>7</li>
+                    <li>7Plus</li>
+                    <li>8</li>
+                    <li>8Plus</li>
+                    <li>X</li>
+                    <li>Xs</li>
+                    <li>Xs Max</li>
+                    <li><a class="all-phone" href="#">Все iPhone <i class="ic-left"></i></a></li>
+                  </ul>
+                  <a class="problems__version-btn btn_" href="#">Смотреть прайс</a>
+                </div>
+                <div class="problems__list">
+                  <h2 class="problems__list-title">Ремонт</h2>
+                  <div class="problems__list-content">
+                    <ul class="problems__list-item">
+                      <li>Дисплей</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Электроника</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Корпус</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span>Ремонт</span>
+          </li>
+          <li class="menu__list-remont">
+            <div class="problems">
+              <div class="problems__devices">
+                <span class="problems__devices-name active" data-device="problems-ipone"><i class="problems__devices-ic icon-phone"></i>iPhone</span>
+                <span class="problems__devices-name" data-device="problems-ipad"><i class="problems__devices-ic icon-ipad"></i>iPad</span>
+                <span class="problems__devices-name" data-device="problems-mac"><i class="problems__devices-ic icon-desktop"></i>Mac</span>
+              </div>
+              <div id="problems-ipone" class="problems__device active">
+                <div class="problems__version align-center">
+                  <p class="problems__version-mob">Выберите модель</p>
+                  <ul class="problems__version-list align-center">
+                    <li class="active">4</li>
+                    <li>4s</li>
+                    <li>5</li>
+                    <li>5s</li>
+                    <li>6</li>
+                    <li>6Plus</li>
+                    <li>6s</li>
+                    <li>7</li>
+                    <li>7Plus</li>
+                    <li>8</li>
+                    <li>8Plus</li>
+                    <li>X</li>
+                    <li>Xs</li>
+                    <li>Xs Max</li>
+                    <li><a class="all-phone" href="#">Все iPhone <i class="ic-left"></i></a></li>
+                  </ul>
+                  <a class="problems__version-btn btn_" href="#">Смотреть прайс</a>
+                </div>
+                <div class="problems__list">
+                  <h2 class="problems__list-title">Проблемы</h2>
+                  <div class="problems__list-content">
+                    <ul class="problems__list-item">
+                      <li>Дисплей</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Электроника</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Корпус</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Фурнитура</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Аудио</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="problems-ipad" class="problems__device">
+                <div class="problems__version align-center">
+                  <p class="problems__version-mob">Выберите модель</p>
+                  <ul class="problems__version-list align-center">
+                    <li class="active">4</li>
+                    <li>4s</li>
+                    <li>5</li>
+                    <li>6s</li>
+                    <li>7</li>
+                    <li>7Plus</li>
+                    <li>8</li>
+                    <li>8Plus</li>
+                    <li>X</li>
+                    <li>Xs</li>
+                    <li>Xs Max</li>
+                    <li><a class="all-phone" href="#">Все iPhone <i class="ic-left"></i></a></li>
+                  </ul>
+                  <a class="problems__version-btn btn_" href="#">Смотреть прайс</a>
+                </div>
+                <div class="problems__list">
+                  <h2 class="problems__list-title">Проблемы</h2>
+                  <div class="problems__list-content">
+                    <ul class="problems__list-item">
+                      <li>Дисплей</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Электроника</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Корпус</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Фурнитура</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="problems-mac" class="problems__device">
+                <div class="problems__version align-center">
+                  <p class="problems__version-mob">Выберите модель</p>
+                  <ul class="problems__version-list align-center">
+                    <li class="active">4</li>
+                    <li>7</li>
+                    <li>7Plus</li>
+                    <li>8</li>
+                    <li>8Plus</li>
+                    <li>X</li>
+                    <li>Xs</li>
+                    <li>Xs Max</li>
+                    <li><a class="all-phone" href="#">Все iPhone <i class="ic-left"></i></a></li>
+                  </ul>
+                  <a class="problems__version-btn btn_" href="#">Смотреть прайс</a>
+                </div>
+                <div class="problems__list">
+                  <h2 class="problems__list-title">Проблемы</h2>
+                  <div class="problems__list-content">
+                    <ul class="problems__list-item">
+                      <li>Дисплей</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Электроника</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Корпус</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                    </ul>
+                    <ul class="problems__list-item">
+                      <li>Аудио</li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Не работает экран <i class="ic-left"></i></a></li>
+                      <li><a href="#">Разбит экран <i class="ic-left"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span>Проблема с устройством</span>
+          </li>
+          <li class="klient">
+            <span>Клиентам <i class="ic-left"></i></span>
+            <ul class="klient__list">
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Бонусы</a></li>
+              <li><a href="#">Гарантия</a></li>
+            </ul>
+          </li>
+          <li><a class="menu__list-link" href="#">Контакты</a></li>
+          <li><a class="menu__list-link" href="#">Задать вопрос</a></li>
+          <li class="menu__list-link shop"><a href="#">Магазин</a></li>
+        </ul>
+        <button id="header-signup" class="signup-btn btn_" type="button">Записаться на диагностику</button>
+      </div>
+      <div id="burger_btn" class="burg">
+        <span class="burg__item burg__item-1"></span>
+        <span class="burg__item burg__item-2"></span>
+        <span class="burg__item burg__item-3"></span>
+      </div>
+    </div>
+  </header>
+  
+  <section class="form-section">
+    <div class="wrapper">
+      <div class="form-block">
+        <h1 class="form-block__title">Ремонт техники<br><span class="form-block__name">Apple</span></h1>
+        <form action="#" id="price" class="apple-form">
+          <input class="apple-form__inp" type="text" name="Name" placeholder="Имя">
+          <input class="apple-form__inp" type="number" name="phone" placeholder="Телефон">
+          <input class="apple-form__inp" type="text" name="description" placeholder="Опишите модель устройства и поломку">
+          <input class="btn_ apple-form__btn" type="submit" value="Узнать цену ремонта">
+        </form>
+      </div>
+      <div class="slider">
+        <div class="slider__block">
+          <div id="slide1" class="slider__block-img">
+            <img src="build/images/rawpixel-1084273-unsplash.png" alt="">
+          </div>
+          <div id="slide2" class="slider__block-img">
+            <img src="build/images/image.png" alt="">
+          </div>
+          <div id="slide3" class="slider__block-img">
+            <img src="build/images/rawpixel-1084273-unsplash.png" alt="">
+          </div>
+          <div id="slide4" class="slider__block-img active">
+            <img src="build/images/image.png" alt="">
+          </div>
+        </div>
+        <div class="slider__button">
+          <span class="slider__button-item" data-slide="slide1"></span>
+          <span class="slider__button-item" data-slide="slide2"></span>
+          <span class="slider__button-item" data-slide="slide3"></span>
+          <span class="slider__button-item active" data-slide="slide4"></span>
+        </div>
+        <div class="slider__bg"></div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <div class="modal">
+    <div class="modal__content">
+      <h2 class="modal__title">Благодарим за заявку!</h2>
+      <p class="modal__masseg">Наш менеджер свяжется с вами в течении 5-ти минут</p>
+      <button class="btn_ modal__btn">Спасибо!</button>
+      <button class="modal__close">&Cross;</button>
+    </div>
+  </div>
+  
+  <div class="modal" id="diagnos-modal">
+    <div class="modal__content modal__content-diagnos">
+      <h2 class="modal__title">Записаться на диагностику</h2>
+      <form action="#" class="apple-form modal__form">
+        <input class="apple-form__inp" type="text" name="Name" placeholder="Имя">
+        <input class="apple-form__inp" type="number" name="phone" placeholder="Телефон">
+        <input class="apple-form__inp" type="text" name="description" placeholder="аботает дисплей, cломан динамик, разбита панел">
+        <p class="modal__konf">Нажимая «Отправить заявку», вы соглашаетесь 
+        с <a href="#">политикой конфиндициальности</a></p>
+        <input class="btn_ apple-form__btn" type="submit" value="Записаться">
+      </form>
+      <button class="modal__close">&Cross;</button>
+    </div>
+  </div>
+  <!--  scripts  -->
+  <script src="build/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
